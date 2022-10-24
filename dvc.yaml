@@ -1,0 +1,7 @@
+stages:
+  gen_data:
+    cmd: for _ in {1..10}; do echo $RANDOM >> data.csv; done
+    plots:
+      - data.csv:
+          cache: false
+          template: custom_linear.json

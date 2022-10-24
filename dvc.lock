@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  gen_data:
+    cmd: for _ in {1..10}; do echo $RANDOM >> data.csv; done
+    outs:
+    - path: data.csv
+      md5: d217bf87c1df1c8729047957620ef695
+      size: 57
